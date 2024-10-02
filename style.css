@@ -1,0 +1,89 @@
+/* Estructura básica */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[disabled] {
+    background-color: #e9e9e9;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.btnrojo {
+    background-color: #d9534f;
+}
+
+.btnrojo:hover {
+    background-color: #c9302c;
+}
+
+.edit {
+    background-color: #f0ad4e;
+}
+
+.edit:hover {
+    background-color: #ec971f;
+}
+
+/* Estructura grid para la lista de invitados */
+.grid-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Cinco columnas, una por cada dato */
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.grid-lista div {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.grid-lista .header {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+/* Botones dentro del grid */
+.grid-lista .acciones {
+    display: flex;
+    gap: 5px;
+}
